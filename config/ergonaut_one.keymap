@@ -113,10 +113,10 @@
             //                           | SHIFT/DEL | SPC | LWR/TAB |   | ADJ/ESC | RSE/ENT| SHIFT/BackSPACE |
 
             bindings = <
-&kp TILDE            &kp Q  &kp W  &kp E           &kp R      &kp T        &kp Y        &kp U        &kp I            &kp O    &kp P     &kp LBKT
-&kp LEFT_ALT         &kp A  &kp S  &kp D           &kp F      &kp G        &kp H        &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
-&mt LCTRL RG(SPACE)  &kp Z  &kp X  &kp C           &kp V      &kp B        &kp N        &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp BSLH
-                                   &mt LSHIFT DEL  &kp SPACE  &lt LWR TAB  &lt ADJ ESC  &lt RSE RET  &mt RSHIFT BSPC
+&mt LA(LC(LG(LEFT_SHIFT))) TILDE  &kp Q  &kp W  &kp E           &kp R      &kp T        &kp Y        &kp U        &kp I            &kp O    &kp P     &kp LBKT
+&kp LEFT_ALT                      &kp A  &kp S  &kp D           &kp F      &kp G        &kp H        &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
+&mt LCTRL RG(SPACE)               &kp Z  &kp X  &kp C           &kp V      &kp B        &kp N        &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp BSLH
+                                                &mt LSHIFT DEL  &kp SPACE  &lt LWR TAB  &lt ADJ ESC  &lt RSE RET  &mt RSHIFT BSPC
             >;
         };
 
@@ -128,10 +128,10 @@
             //                                  | TRANS |  TRANS   | TRANS |            | TRANS | TRANS  | TRANS |
 
             bindings = <
-&kp C_VOLUME_UP  &kp C_PREV           &kp C_NEXT           &kp INS              &kp PG_UP            &kp PAGE_DOWN        &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none    &none
-&kp K_MUTE       &kp LC(KP_NUMBER_1)  &kp LC(KP_NUMBER_2)  &kp LC(KP_NUMBER_3)  &kp LC(KP_NUMBER_4)  &kp LC(KP_NUMBER_5)  &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOT  &none
-&kp C_VOL_DN     &none                &none                &none                &none                &none                &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0   &none
-                                                           &lt 4 A              &trans               &trans               &trans  &trans        &kp BSPC
+&kp C_VOLUME_UP  &kp C_PREV               &kp C_NEXT             &kp INS               &kp PG_UP                     &kp PAGE_DOWN        &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none    &none
+&kp K_MUTE       &kp RS(RC(EXCLAMATION))  &kp RC(RS(AT_SIGN))    &kp RS(RC(HASH))      &kp RS(RC(DOLLAR))            &kp RS(RC(PERCENT))  &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DOT  &none
+&kp C_VOL_DN     &kp RS(RC(CARET))        &kp RC(RS(AMPERSAND))  &kp RS(RC(ASTERISK))  &kp RC(RS(LEFT_PARENTHESIS))  &none                &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0   &none
+                                                                 &lt 4 A               &trans                        &trans               &trans  &trans        &kp BSPC
             >;
         };
 
